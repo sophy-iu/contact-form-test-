@@ -1,0 +1,96 @@
+/* ヘッダー */
+.header {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.header__inner {
+    padding: 20px 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    color: #7c6b5d;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+/* メイン */
+.contact-form__content {
+    max-width: 1230px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.contact-form__heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7c6b5d;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+}
+
+/* フォーム */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #7c6b5d;
+}
+
+.required {
+    color: red;
+}
+
+/* input共通 */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+/* 名前横並び */
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* 電話番号 */
+.tel-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tel-group input {
+    width: 100%;
+}
+
+/* ラジオ */
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* ボタン */
+.btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px;
+    background-color: #7c6b5d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

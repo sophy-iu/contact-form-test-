@@ -22,38 +22,47 @@
 .contact-form__content {
     max-width: 1230px;
     margin: 40px auto;
-    padding: 40px;
+    padding: 30px 15px;
 }
 
 .contact-form__heading {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #7c6b5d;
     font-size: 24px;
     font-family: "Playfair Display", serif;
 }
 
 /* フォーム */
-.form-group {
-    margin-bottom: 20px;
+.form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form__group {
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.form-group label {
+.form__group-title label {
     display: block;
     margin-bottom: 8px;
     color: #7c6b5d;
 }
 
-.required {
+.form__group-title span {
     color: red;
 }
 
+.form__group-content {
+    width: 800px;
+}
+
 /* input共通 */
-input,
-select,
-textarea {
+.form__input--text input,
+.form__input--text select,
+.form__input--text textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -61,7 +70,7 @@ textarea {
 }
 
 /* 名前横並び */
-.name-group {
+.form__input--text {
     display: flex;
     gap: 10px;
 }

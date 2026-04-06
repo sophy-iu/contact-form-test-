@@ -28,9 +28,14 @@
 .contact-form__heading {
     text-align: center;
     margin-bottom: 40px;
+    padding-bottom: 30px;
     color: #7c6b5d;
     font-size: 24px;
     font-family: "Playfair Display", serif;
+}
+
+.contact-form__heading h2 {
+    margin: 0;
 }
 
 /* フォーム */
@@ -59,41 +64,101 @@
     width: 800px;
 }
 
-/* input共通 */
+/* input共通(性別以外) */
 .form__input--text input,
-.form__input--text select,
-.form__input--text textarea {
+.form__input--tell input,
+.form__input--kinds select,
+.form__input--textarea textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid #ddd;
     background: #f9f9f9;
+    color: #7c6b5d;
+    appearance: none;
 }
 
-/* 名前横並び */
+/* 高さ */
+.form__input--text input,
+.form__input--tell input,
+.form__input--radio input,
+.form__input--kinds select {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+/* 横並び */
 .form__input--text {
     display: flex;
-    gap: 10px;
+    gap: 60px;
 }
 
-/* 電話番号 */
-.tel-group {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.tel-group input {
-    width: 100%;
-}
-
-/* ラジオ */
-.radio-group {
+.form__input--tell {
     display: flex;
     gap: 20px;
 }
 
+/* 性別　*/
+.form__input--radio {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+.form__radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7c6b5d;
+}
+
+.form__radio input:checked {
+    background: #7c6b5d;
+} 
+
+.form__radio input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7c6b5d;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* 電話番号 */
+.form__input--tell {
+    align-items: center;
+}
+
+.form__input--tell input {
+    text-align: center;
+    width: 100%;
+}
+
 /* ボタン */
-.btn {
+.form__button {
+    margin-top: 30px;
+}
+
+/* 種類 */
+.form__input--kinds {
+    position: relative;
+}
+
+.form__input--kinds::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-25%);
+    border: 10px solid transparent;
+    border-top: 10px solid #7c6b5d;
+    pointer-events: none;
+}
+
+.form__button-submit {
     display: block;
     width: 200px;
     margin: 30px auto 0;

@@ -43,10 +43,16 @@
                     <label>性別 <span>※</span></label>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
-                        <label><input type="radio" name="gender" value="male"> 男性</label>
-                        <label><input type="radio" name="gender" value="female"> 女性</label>
-                        <label><input type="radio" name="gender" value="other"> その他</label>
+                    <div class="form__input--radio">
+                        <label class="form__radio">
+                            <input type="radio" name="gender" value="male"> 男性
+                        </label>
+                        <label class="form__radio">
+                            <input type="radio" name="gender" value="female"> 女性
+                        </label>
+                        <label class="form__radio">
+                            <input type="radio" name="gender" value="other"> その他
+                        </label>
                     </div>
                 </div>
             </div>
@@ -69,12 +75,12 @@
                     <label>電話番号 <span>※</span></label>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
-                        <input type="text" name="tel1">
+                    <div class="form__input--tell">
+                        <input type="text" name="tel1" placeholder="080">
                         <span>-</span>
-                        <input type="text" name="tel2">
+                        <input type="text" name="tel2" placeholder="1234">
                         <span>-</span>
-                        <input type="text" name="tel3">
+                        <input type="text" name="tel3" placeholder="5678">
                     </div>
                 </div>
             </div>
@@ -109,7 +115,7 @@
                     <label>お問い合わせの種類 <span>※</span></label>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--kinds">
                         <select name="type">
                             <option value="">選択してください</option>
                             <option value="product">商品について</option>
@@ -127,12 +133,14 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--textarea">
-                        <textarea name="content" rows="5"></textarea>
+                        <textarea name="content" rows="5" placeholder="お問い合わせ内容をご確認ください。"></textarea>
                     </div>
                 </div>
             </div>
 
-            <button type="submit" class="btn">確認画面</button>
+            <div class="form__button">
+                <button type="submit" class="form__button-submit">確認画面</button>
+            </div>
 
         </form>
     </div>

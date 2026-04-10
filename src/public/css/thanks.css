@@ -1,0 +1,46 @@
+.thanks {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks__inner {
+    text-align: center;
+    position: relative;
+}
+
+/* 背景の薄い文字 */
+.thanks__background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 450px;
+    color: rgba(124, 107, 93, 0.1);
+    font-family: "Playfair Display", serif;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+/* メッセージ */
+.thanks__message {
+    font-size: 20px;
+    color: #7c6b5d;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ボタン */
+.thanks__button-home {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #7c6b5d;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
